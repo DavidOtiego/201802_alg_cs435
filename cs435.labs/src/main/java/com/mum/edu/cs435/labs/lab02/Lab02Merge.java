@@ -1,6 +1,7 @@
 package com.mum.edu.cs435.labs.lab02;
 
 public class Lab02Merge {
+	
 	public static void main(String[] args) {
 		int[] a = new int[] { 1, 4, 5, 8, 17 };
 		int[] b = new int[] { 2, 4, 8, 11, 13, 21, 23, 25 };
