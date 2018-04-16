@@ -1,4 +1,7 @@
-package com.mum.edu.cs435.labs.lab07;
+package com.mum.edu.cs435.labs.lab08;
+
+import java.util.ArrayDeque;
+import java.util.Queue;
 
 public class SinglyLinkedList {
 	private Node head; // zeroth element
@@ -100,6 +103,24 @@ public class SinglyLinkedList {
 
 	}
 
+	public void reverse() {
+		Queue<String> s = new ArrayDeque<>(); 
+
+		Node next = head;
+
+		while (next != null) {
+			s.add(next.value);
+
+			next = next.next;
+		}
+
+		head = null;
+
+		while (!s.isEmpty()) {
+			add(s.remove());
+		}
+	}
+
 	public int size() {
 		int count = 0;
 		Node next = head;
@@ -140,6 +161,16 @@ public class SinglyLinkedList {
 	}
 
 	public static void main(String[] args) {
+
+		SinglyLinkedList slist = new SinglyLinkedList();
+		slist.add("3.1");
+		slist.add("3.2");
+		slist.add("3.3");
+
+		System.out.println(slist.toString());
+		slist.reverse();
+		System.out.println("--- Reversed ----");
+		System.out.println(slist.toString());
 	}
 
 }
