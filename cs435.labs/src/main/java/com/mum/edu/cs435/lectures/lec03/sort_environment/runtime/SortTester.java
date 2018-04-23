@@ -9,7 +9,7 @@ import java.util.*;
 
 
 public class SortTester {
-	private final String PACKAGE = "com.mum.edu.cs435.labs.lab04";
+	private final String PACKAGE = "com.mum.edu.cs435.labs.lab09";
 	private final String FILENAME = "src//main//java//com//mum//edu//cs435//lectures//lec03//sort_environment//runtime//sorters_to_be_run.txt";
 	private final int[] ARRAY_SIZES = {500,1000,4000, 5000}; //only four different sizes allowed
 	private final int NUM_TESTS = 40;
